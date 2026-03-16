@@ -1,8 +1,8 @@
-name: SmartSpawner
+name: GooseSpawner
 version: '${version}'
 main: github.nighter.smartspawner.SmartSpawner
 api-version: '1.21'
-authors: [ https://github.com/NighterDevelopment/SmartSpawner ]
+authors: [ https://github.com/NighterDevelopment/SmartSpawner, https://github.com/clapbxt/GooseSpawners ]
 folia-supported: true
 softdepend:
   # Bedrock Support Plugins
@@ -19,6 +19,7 @@ softdepend:
   # Utility/Economy Plugins
   - CoinsEngine
   - Vault
+  - GooseCore
 
   # Protection/Region Plugins
   - WorldGuard

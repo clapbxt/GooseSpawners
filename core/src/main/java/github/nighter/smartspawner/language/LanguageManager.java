@@ -113,6 +113,7 @@ public class LanguageManager {
         localeFileMap.put("vi_VN", EnumSet.allOf(LanguageFileType.class));
         localeFileMap.put("DonutSMP", EnumSet.allOf(LanguageFileType.class));
         localeFileMap.put("de_DE", EnumSet.allOf(LanguageFileType.class));
+        localeFileMap.put("GooseSMP", EnumSet.allOf(LanguageFileType.class));
 
         localeFileMap.forEach((locale, fileTypes) -> {
             fileTypes.forEach(fileType -> {

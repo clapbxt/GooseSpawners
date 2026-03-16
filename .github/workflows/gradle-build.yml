@@ -74,18 +74,18 @@ jobs:
       - name: Generate Javadoc
         run: ./gradlew javadoc --no-daemon
 
-      - name: Upload SmartSpawner JAR
+      - name: Upload GooseSpawner JAR
         uses: actions/upload-artifact@v4
         with:
-          name: SmartSpawner-${{ steps.extract_version.outputs.version }}
-          path: core/build/libs/SmartSpawner-${{ steps.extract_version.outputs.version }}.jar
+          name: GooseSpawner-${{ steps.extract_version.outputs.version }}
+          path: core/build/libs/GooseSpawner-${{ steps.extract_version.outputs.version }}.jar
           retention-days: 90
           if-no-files-found: error
 
       - name: Upload API JAR
         uses: actions/upload-artifact@v4
         with:
-          name: SmartSpawner-API-${{ steps.extract_version.outputs.version }}
+          name: GooseSpawner-API-${{ steps.extract_version.outputs.version }}
           path: api/build/libs/*.jar
           retention-days: 90
           if-no-files-found: warn
@@ -93,7 +93,7 @@ jobs:
       - name: Upload Javadoc
         uses: actions/upload-artifact@v4
         with:
-          name: SmartSpawner-Javadoc-${{ steps.extract_version.outputs.version }}
+          name: GooseSpawner-Javadoc-${{ steps.extract_version.outputs.version }}
           path: core/build/docs/javadoc/**
           retention-days: 30
           if-no-files-found: warn

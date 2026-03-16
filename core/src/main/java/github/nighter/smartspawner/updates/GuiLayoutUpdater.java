@@ -17,7 +17,7 @@ public class GuiLayoutUpdater {
     private static final String GUI_LAYOUT_VERSION_KEY = "gui_layout_version";
     private static final String GUI_LAYOUTS_DIR = "gui_layouts";
     private static final String[] LAYOUT_FILES = {"storage_gui.yml", "main_gui.yml", "sell_confirm_gui.yml"};
-    private static final String[] LAYOUT_NAMES = {"default", "DonutSMP"};
+    private static final String[] LAYOUT_NAMES = {"default", "DonutSMP", "GooseSMP"};
 
 
     public GuiLayoutUpdater(SmartSpawner plugin) {

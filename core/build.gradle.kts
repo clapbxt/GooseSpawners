@@ -26,6 +26,7 @@ dependencies {
     compileOnly("com.bgsoftware:SuperiorSkyblockAPI:2025.2.1")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7.1")
     compileOnly("su.nightexpress.coinsengine:CoinsEngine:2.6.0")
+    compileOnly("com.clapbxt:goosecore:1.0.1")
     compileOnly("com.github.Gypopo:EconomyShopGUI-API:1.9.0")
     compileOnly("world.bentobox:bentobox:3.10.0-SNAPSHOT")
     compileOnly("su.nightexpress.excellentshop:Core:4.22.0")
@@ -71,7 +72,7 @@ tasks.withType<Javadoc>().configureEach {
 
 // Don't use 'jar' task to build plugin jar, use 'shadowJar' task instead
 tasks.jar {
-    archiveBaseName.set("SmartSpawnerJar")
+    archiveBaseName.set("GooseSpawnerJar")
     archiveVersion.set(version.toString())
 
     from(project(":api").sourceSets["main"].output)
@@ -80,7 +81,7 @@ tasks.jar {
 }
 
 tasks.shadowJar {
-    archiveBaseName.set("SmartSpawner")
+    archiveBaseName.set("GooseSpawner")
     archiveVersion.set(version.toString())
     archiveClassifier.set("")
 

@@ -8,13 +8,13 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "github.nighter"
-            artifactId = "smartspawner-api"
+            artifactId = "GooseSpawner-api"
             from(components["java"])
 
             pom {
-                name.set("SmartSpawner API")
-                description.set("API for SmartSpawner plugin - allows other plugins to create and manage spawners")
-                url.set("https://github.com/NighterDevelopment/SmartSpawner")
+                name.set("GooseSpawner API")
+                description.set("API for GooseSpawner plugin - allows other plugins to create and manage spawners")
+                url.set("https://github.com/NighterDevelopment/GooseSpawner")
                 licenses {
                     license {
                         name.set("MIT License")

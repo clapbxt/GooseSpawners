@@ -1,18 +1,19 @@
 package github.nighter.smartspawner.spawner.gui.layout;
 
-import github.nighter.smartspawner.SmartSpawner;
-import github.nighter.smartspawner.updates.GuiLayoutUpdater;
-import lombok.Getter;
-import org.bukkit.Material;
-import org.bukkit.configuration.ConfigurationSection;
-import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.configuration.file.YamlConfiguration;
-
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.logging.Level;
+
+import org.bukkit.Material;
+import org.bukkit.configuration.ConfigurationSection;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.configuration.file.YamlConfiguration;
+
+import github.nighter.smartspawner.SmartSpawner;
+import github.nighter.smartspawner.updates.GuiLayoutUpdater;
+import lombok.Getter;
 
 public class GuiLayoutConfig {
     private static final String GUI_LAYOUTS_DIR = "gui_layouts";
@@ -73,7 +74,7 @@ public class GuiLayoutConfig {
 
     private void autoSaveLayoutFiles() {
         try {
-            String[] layoutNames = new String[]{DEFAULT_LAYOUT, "DonutSMP"};
+            String[] layoutNames = new String[]{DEFAULT_LAYOUT, "DonutSMP", "GooseSMP"};
 
             for (String layoutName : layoutNames) {
                 File layoutDir = new File(layoutsDir, layoutName);

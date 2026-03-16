@@ -1,3 +1,6 @@
+# Language file version - Do not modify this value
+language_version: 1.6.2
+
 # ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
 #   ███████╗███╗   ███╗ █████╗ ██████╗ ████████╗███████╗██████╗  █████╗ ██╗    ██╗███╗   ██╗███████╗██████╗
 #   ██╔════╝████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║    ██║████╗  ██║██╔════╝██╔══██╗
@@ -14,182 +17,181 @@
 custom_item:
   # Appearance of smart spawner items in inventory and tooltips
   spawner:
-    name: "&#3498dbꜱᴘᴀᴡɴᴇʀ {ᴇɴᴛɪᴛʏ}"
-    loot_items: "  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)"
-    loot_items_empty: "  &#ecf0f1•  ᴋʜôɴɢ ᴄó ᴠậᴛ ᴘʜẩᴍ"
+    name: '&#3498dbꜱᴘᴀᴡɴᴇʀ {ᴇɴᴛɪᴛʏ}'
+    loot_items: '  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)'
+    loot_items_empty: '  &#ecf0f1•  ᴋʜôɴɢ ᴄó ᴠậᴛ ᴘʜẩᴍ'
     lore:
-      - ""
-      - "&#3498db◈ &#3498dbᴛʜôɴɢ ᴛɪɴ:"
-      - "  &#ecf0f1•  ᴋɪɴʜ ɴɢʜɪệᴍ: &#3498db{exp}"
-      - ""
-      - "&#3498db◈ &#3498dbᴠậᴛ ᴘʜẩᴍ:"
-      - "{loot_items}"
-      - ""
-
+    - ''
+    - '&#3498db◈ &#3498dbᴛʜôɴɢ ᴛɪɴ:'
+    - '  &#ecf0f1•  ᴋɪɴʜ ɴɢʜɪệᴍ: &#3498db{exp}'
+    - ''
+    - '&#3498db◈ &#3498dbᴠậᴛ ᴘʜẩᴍ:'
+    - '{loot_items}'
+    - ''
+  
   # Appearance of item spawner items in inventory and tooltips
   item_spawner:
-    name: "&#3498dbꜱᴘᴀᴡɴᴇʀ {ᴇɴᴛɪᴛʏ}"
-    loot_items: "  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)"
-    loot_items_empty: "  &#ecf0f1•  ᴋʜôɴɢ ᴄó ᴠậᴛ ᴘʜẩᴍ"
+    name: '&#3498dbꜱᴘᴀᴡɴᴇʀ {ᴇɴᴛɪᴛʏ}'
+    loot_items: '  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)'
+    loot_items_empty: '  &#ecf0f1•  ᴋʜôɴɢ ᴄó ᴠậᴛ ᴘʜẩᴍ'
     lore:
-      - ""
-      - "&#3498db◈ &#3498dbᴛʜôɴɢ ᴛɪɴ:"
-      - "  &#ecf0f1•  ᴋɪɴʜ ɴɢʜɪệᴍ: &#3498db{exp}"
-      - ""
-      - "&#3498db◈ &#3498dbᴠậᴛ ᴘʜẩᴍ:"
-      - "{loot_items}"
-      - ""
-
+    - ''
+    - '&#3498db◈ &#3498dbᴛʜôɴɢ ᴛɪɴ:'
+    - '  &#ecf0f1•  ᴋɪɴʜ ɴɢʜɪệᴍ: &#3498db{exp}'
+    - ''
+    - '&#3498db◈ &#3498dbᴠậᴛ ᴘʜẩᴍ:'
+    - '{loot_items}'
+    - ''
+  
   # Appearance of vanilla spawner items in inventory and tooltips
   # Available placeholders: {entity}, {ᴇɴᴛɪᴛʏ}
   # Delete this section if you don't want to use custom vanilla spawners name and lore
   vanilla_spawner:
-    name: "Spawner {entity}"
-    lore:
+    name: Spawner {entity}
 
 # Item display names
 item:
   # These names are used when displaying potential drops in spawner tooltips
   # For multilingual support, replace with corresponding names from your language
 
-  # Animal & Fish Drops
+    # Animal & Fish Drops
   LEATHER:
-    name: "ᴅᴀ"
+    name: ᴅᴀ
   STRING:
-    name: "ꜱợɪ ᴄʜỉ"
+    name: ꜱợɪ ᴄʜỉ
   FEATHER:
-    name: "ʟôɴɢ"
+    name: ʟôɴɢ
   CHICKEN:
-    name: "ᴛʜịᴛ ɢà ꜱốɴɢ"
+    name: ᴛʜịᴛ ɢà ꜱốɴɢ
   COD:
-    name: "ᴄá ᴛᴜʏếᴛ ꜱốɴɢ"
+    name: ᴄá ᴛᴜʏếᴛ ꜱốɴɢ
   SALMON:
-    name: "ᴄá ʜồɪ ꜱốɴɢ"
+    name: ᴄá ʜồɪ ꜱốɴɢ
   BEEF:
-    name: "ᴛʜịᴛ ʙò ꜱốɴɢ"
+    name: ᴛʜịᴛ ʙò ꜱốɴɢ
   PORKCHOP:
-    name: "ᴛʜịᴛ ʜᴇᴏ ꜱốɴɢ"
+    name: ᴛʜịᴛ ʜᴇᴏ ꜱốɴɢ
   MUTTON:
-    name: "ᴛʜịᴛ ᴄừᴜ ꜱốɴɢ"
+    name: ᴛʜịᴛ ᴄừᴜ ꜱốɴɢ
   RABBIT:
-    name: "ᴛʜịᴛ ᴛʜỏ ꜱốɴɢ"
+    name: ᴛʜịᴛ ᴛʜỏ ꜱốɴɢ
   WHITE_WOOL:
-    name: "ʟᴇɴ ᴛʀắɴɢ"
+    name: ʟᴇɴ ᴛʀắɴɢ
   RABBIT_HIDE:
-    name: "ᴅᴀ ᴛʜỏ"
+    name: ᴅᴀ ᴛʜỏ
   RABBIT_FOOT:
-    name: "ᴄʜâɴ ᴛʜỏ"
+    name: ᴄʜâɴ ᴛʜỏ
   PUFFERFISH:
-    name: "ᴄá ɴóᴄ"
+    name: ᴄá ɴóᴄ
   TROPICAL_FISH:
-    name: "ᴄá ɴʜɪệᴛ Đớɪ"
-
+    name: ᴄá ɴʜɪệᴛ Đớɪ
+  
   # Hostile Mob Drops
   BONE:
-    name: "xươɴɢ"
+    name: xươɴɢ
   BONE_MEAL:
-    name: "ʙộᴛ xươɴɢ"
+    name: ʙộᴛ xươɴɢ
   ARROW:
-    name: "ᴍũɪ ᴛêɴ"
+    name: ᴍũɪ ᴛêɴ
   SPIDER_EYE:
-    name: "ᴍắᴛ ɴʜệɴ"
+    name: ᴍắᴛ ɴʜệɴ
   GUNPOWDER:
-    name: "ᴛʜᴜốᴄ ꜱúɴɢ"
+    name: ᴛʜᴜốᴄ ꜱúɴɢ
   ROTTEN_FLESH:
-    name: "ᴛʜịᴛ ᴛʜốɪ"
+    name: ᴛʜịᴛ ᴛʜốɪ
   ENDER_PEARL:
-    name: "ɴɢọᴄ ᴇɴᴅᴇʀ"
+    name: ɴɢọᴄ ᴇɴᴅᴇʀ
   GHAST_TEAR:
-    name: "ɴướᴄ ᴍắᴛ ɢʜᴀꜱᴛ"
+    name: ɴướᴄ ᴍắᴛ ɢʜᴀꜱᴛ
   MAGMA_CREAM:
-    name: "ᴋᴇᴍ ᴅᴜɴɢ ɴʜᴀᴍ"
+    name: ᴋᴇᴍ ᴅᴜɴɢ ɴʜᴀᴍ
   PHANTOM_MEMBRANE:
-    name: "ᴍàɴɢ ᴅᴀ ᴘʜᴀɴᴛᴏᴍ"
+    name: ᴍàɴɢ ᴅᴀ ᴘʜᴀɴᴛᴏᴍ
   SHULKER_SHELL:
-    name: "ᴠỏ ꜱʜᴜʟᴋᴇʀ"
+    name: ᴠỏ ꜱʜᴜʟᴋᴇʀ
   SLIME_BALL:
-    name: "ʙóɴɢ ꜱʟɪᴍᴇ"
+    name: ʙóɴɢ ꜱʟɪᴍᴇ
   BLAZE_ROD:
-    name: "ǫᴜᴇ ʟửᴀ"
+    name: ǫᴜᴇ ʟửᴀ
   BREEZE_ROD:
-    name: "ǫᴜᴇ ɢɪó"
+    name: ǫᴜᴇ ɢɪó
   WITHER_SKELETON_SKULL:
-    name: "đầᴜ xươɴɢ ᴋʜô ʜéᴏ"
-
+    name: đầᴜ xươɴɢ ᴋʜô ʜéᴏ
+  
   # Weapons & Tools
   BOW:
-    name: "ᴄᴜɴɢ"
+    name: ᴄᴜɴɢ
   CROSSBOW:
-    name: "ɴỏ"
+    name: ɴỏ
   GOLDEN_SWORD:
-    name: "ᴋɪếᴍ ᴠàɴɢ"
+    name: ᴋɪếᴍ ᴠàɴɢ
   GOLDEN_AXE:
-    name: "ʀìᴜ ᴠàɴɢ"
+    name: ʀìᴜ ᴠàɴɢ
   STONE_SWORD:
-    name: "ᴋɪếᴍ Đá"
+    name: ᴋɪếᴍ Đá
   IRON_AXE:
-    name: "ʀìᴜ ꜱắᴛ"
+    name: ʀìᴜ ꜱắᴛ
   TRIDENT:
-    name: "ᴄâʏ đɪɴʜ ʙᴀ"
+    name: ᴄâʏ đɪɴʜ ʙᴀ
   TIPPED_ARROW:
-    name: "ᴍũɪ ᴛêɴ ᴄó ʜɪệᴜ Ứɴɢ"
+    name: ᴍũɪ ᴛêɴ ᴄó ʜɪệᴜ Ứɴɢ
   TOTEM_OF_UNDYING:
-    name: "ᴠậᴛ ᴛổ ᴛʀườɴɢ ꜱɪɴʜ"
+    name: ᴠậᴛ ᴛổ ᴛʀườɴɢ ꜱɪɴʜ
   SADDLE:
-    name: "ʏêɴ ɴɢựᴀ"
-
+    name: ʏêɴ ɴɢựᴀ
+  
   # Materials & Resources
   COPPER_INGOT:
-    name: "ᴛʜỏɪ đồɴɢ"
+    name: ᴛʜỏɪ đồɴɢ
   PRISMARINE_SHARD:
-    name: "ᴍảɴʜ ʟăɴɢ ᴛʀụ ʙɪểɴ"
+    name: ᴍảɴʜ ʟăɴɢ ᴛʀụ ʙɪểɴ
   PRISMARINE_CRYSTALS:
-    name: "ᴛɪɴʜ ᴛʜể ʟăɴɢ ᴛʀụ ʙɪểɴ"
+    name: ᴛɪɴʜ ᴛʜể ʟăɴɢ ᴛʀụ ʙɪểɴ
   WET_SPONGE:
-    name: "ʙọᴛ ʙɪểɴ Ướᴛ"
+    name: ʙọᴛ ʙɪểɴ Ướᴛ
   EMERALD:
-    name: "ɴɢọᴄ ʟụᴄ ʙảᴏ"
+    name: ɴɢọᴄ ʟụᴄ ʙảᴏ
   IRON_INGOT:
-    name: "ᴘʜôɪ ꜱắᴛ"
+    name: ᴘʜôɪ ꜱắᴛ
   GOLD_NUGGET:
-    name: "ʜạᴛ ᴠàɴɢ"
+    name: ʜạᴛ ᴠàɴɢ
   GOLD_INGOT:
-    name: "ᴘʜôɪ ᴠàɴɢ"
+    name: ᴘʜôɪ ᴠàɴɢ
   REDSTONE:
-    name: "đá đỏ"
+    name: đá đỏ
   GLOWSTONE_DUST:
-    name: "ʙộᴛ đá ᴘʜáᴛ ꜱáɴɢ"
+    name: ʙộᴛ đá ᴘʜáᴛ ꜱáɴɢ
   COAL:
-    name: "ᴛʜᴀɴ"
-
+    name: ᴛʜᴀɴ
+  
   # Miscellaneous Items
   GLOW_INK_SAC:
-    name: "ᴛúɪ ᴍựᴄ ᴘʜáᴛ ꜱáɴɢ"
+    name: ᴛúɪ ᴍựᴄ ᴘʜáᴛ ꜱáɴɢ
   INK_SAC:
-    name: "ᴛúɪ ᴍựᴄ"
+    name: ᴛúɪ ᴍựᴄ
   CARROT:
-    name: "ᴄà ʀốᴛ"
+    name: ᴄà ʀốᴛ
   POTATO:
-    name: "ᴋʜᴏᴀɪ ᴛâʏ"
+    name: ᴋʜᴏᴀɪ ᴛâʏ
   POPPY:
-    name: "ʜᴏᴀ ᴀɴʜ ᴛúᴄ"
+    name: ʜᴏᴀ ᴀɴʜ ᴛúᴄ
   SNOWBALL:
-    name: "ᴄầᴜ ᴛᴜʏếᴛ"
+    name: ᴄầᴜ ᴛᴜʏếᴛ
   SEAGRASS:
-    name: "ᴄỏ ʙɪểɴ"
+    name: ᴄỏ ʙɪểɴ
   SUGAR:
-    name: "đườɴɢ"
+    name: đườɴɢ
   GLASS_BOTTLE:
-    name: "ᴄʜᴀɪ ᴛʜủʏ ᴛɪɴʜ"
+    name: ᴄʜᴀɪ ᴛʜủʏ ᴛɪɴʜ
   STICK:
-    name: "ɢậʏ"
+    name: ɢậʏ
   SCULK_CATALYST:
-    name: "ᴋʜốɪ xúᴄ ᴛáᴄ ꜱᴄᴜʟᴋ"
+    name: ᴋʜốɪ xúᴄ ᴛáᴄ ꜱᴄᴜʟᴋ
   TIDE_ARMOR_TRIM_SMITHING_TEMPLATE:
-    name: "ᴛʀᴀɴɢ ᴛʀí ɢɪáᴘ ᴛʜủʏ ᴛʀɪềᴜ"
+    name: ᴛʀᴀɴɢ ᴛʀí ɢɪáᴘ ᴛʜủʏ ᴛʀɪềᴜ
   DIAMOND:
-    name: "ᴋɪᴍ ᴄươɴɢ"
+    name: ᴋɪᴍ ᴄươɴɢ
   NETHER_STAR:
-    name: "ɴɢôɪ ꜱᴀᴏ ᴅịᴀ ɴɢụᴄ"
+    name: ɴɢôɪ ꜱᴀᴏ ᴅịᴀ ɴɢụᴄ
   NETHERITE_INGOT:
-    name: "ᴛʜỏɪ ɴᴇᴛʜᴇʀɪᴛᴇ"
+    name: ᴛʜỏɪ ɴᴇᴛʜᴇʀɪᴛᴇ

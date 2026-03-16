@@ -1,14 +1,16 @@
 package github.nighter.smartspawner.hooks.economy.currency;
 
+import java.util.logging.Level;
+
+import org.bukkit.OfflinePlayer;
+import org.bukkit.plugin.RegisteredServiceProvider;
+
 import github.nighter.smartspawner.SmartSpawner;
 import lombok.Getter;
 import net.milkbowl.vault.economy.Economy;
-import org.bukkit.plugin.RegisteredServiceProvider;
-import org.bukkit.OfflinePlayer;
+import com.clapbxt.goosecore.economy.EconomyAPI;
 import su.nightexpress.coinsengine.api.CoinsEngineAPI;
 import su.nightexpress.coinsengine.api.currency.Currency;
-
-import java.util.logging.Level;
 
 public class CurrencyManager {
     private final SmartSpawner plugin;
@@ -39,7 +41,7 @@ public class CurrencyManager {
     }
 
     private void loadConfiguration() {
-        this.configuredCurrencyType = plugin.getConfig().getString("custom_economy.currency", "VAULT");
+        this.configuredCurrencyType = plugin.getConfig().getString("custom_economy.currency", "GOOSECORE");
         this.configuredCoinsEngineCurrency = plugin.getConfig().getString("custom_economy.coinsengine_currency", "coins");
     }
 
@@ -53,8 +55,11 @@ public class CurrencyManager {
         } else if (configuredCurrencyType.equalsIgnoreCase("COINSENGINE")) {
             currencyAvailable = setupCoinsEngineEconomy();
 
+        } else if (configuredCurrencyType.equalsIgnoreCase("GOOSECORE")) {
+            currencyAvailable = setupGooseCoreEconomy();
+            
         } else {
-            plugin.getLogger().warning("Unsupported currency type: " + configuredCurrencyType + ". Currently only VAULT is supported.");
+            plugin.getLogger().warning("Unsupported currency type: " + configuredCurrencyType + ". View config for supported options.");
             plugin.getLogger().warning("Economy features will be disabled.");
         }
     }
@@ -116,6 +121,28 @@ public class CurrencyManager {
         }
     }
 
+    private boolean setupGooseCoreEconomy() {
+        if (plugin.getServer().getPluginManager().getPlugin("GooseCore") == null) {
+            plugin.getLogger().warning("GooseCore not found! Selling items from spawner will be disabled.");
+            return false;
+        }
+
+        try {
+            if (!EconomyAPI.isAvailable()) {
+                plugin.getLogger().warning("GooseCore Economy API is not available! Selling items from spawner will be disabled.");
+                return false;
+            }
+
+            activeCurrencyProvider = "GooseCore";
+            plugin.getLogger().info("Successfully connected to GooseCore Economy.");
+            return true;
+
+        } catch (Exception e) {
+            plugin.getLogger().log(Level.SEVERE, "Error setting up GooseCore economy integration", e);
+            return false;
+        }
+    }
+
     public boolean deposit(double amount, OfflinePlayer player) {
         if (!currencyAvailable) {
             plugin.getLogger().warning("Currency not available for deposit operation.");
@@ -140,6 +167,15 @@ public class CurrencyManager {
             return true;
         }
 
+         if (configuredCurrencyType.equalsIgnoreCase("GOOSECORE")) {
+            if (!EconomyAPI.isAvailable()) {
+                plugin.getLogger().warning("GooseCore economy is not available.");
+                return false;
+            }
+            EconomyAPI.deposit(player, (int) amount);
+            return true;
+        }
+
         plugin.getLogger().warning("Unsupported currency type during deposit: " + configuredCurrencyType);
         return false;
     }
@@ -159,6 +195,15 @@ public class CurrencyManager {
             return;
         }
 
+        if (configuredCurrencyType.equalsIgnoreCase("GOOSECORE")) {
+            if (!EconomyAPI.isAvailable()) {
+                plugin.getLogger().warning("GooseCore economy is not available.");
+                return;
+            }
+            EconomyAPI.withdraw(player, (int) amount);
+            return;
+        }
+        
         if (configuredCurrencyType.equalsIgnoreCase("COINSENGINE")) {
             if (coinsEngineCurrency == null) {
                 plugin.getLogger().warning("CoinsEngine currency is not initialized.");

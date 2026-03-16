@@ -1,4 +1,4 @@
-rootProject.name = "SmartSpawner"
+rootProject.name = "GooseSpawner"
 include("core")
 include("api")
 

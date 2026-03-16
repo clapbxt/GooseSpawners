@@ -1,3 +1,6 @@
+# Configuration version - Do not modify this value
+config_version: 1.6.2
+
 # TIME FORMAT GUIDE
 # Simple formats: 20s (20 seconds), 5m (5 minutes), 1h (1 hour)
 # Complex format: 1d_2h_30m_15s (1 day, 2 hours, 30 minutes, 15 seconds)
@@ -13,10 +16,10 @@
 #               Language Settings
 #---------------------------------------------------
 # Language setting (available: en_US, vi_VN, de_DE, DonutSMP)
-language: en_US
+language: GooseSMP
 
 # Spawner GUI layout configuration (available: default, DonutSMP)
-gui_layout: default
+gui_layout: GooseSMP
 
 # Enable or disable debug mode (provides verbose console output)
 debug: false
@@ -30,13 +33,13 @@ spawner_properties:
     # Spawn Parameters - Controls mob generation frequency and amounts
     min_mobs: 1         # Minimum mobs spawned per cycle
     max_mobs: 4         # Maximum mobs spawned per cycle
-    range: 16           # Player proximity required for activation (in blocks)
-    delay: 25s          # Base delay between spawn cycles (see time format guide above)
+    range: 100          # Player proximity required for activation (in blocks)
+    delay: 30s          # Base delay between spawn cycles (see time format guide above)
 
     # Storage Settings - Defines internal inventory capacity
-    max_storage_pages: 1  # Each page provides 45 inventory slots
+    max_storage_pages: 50  # Each page provides 45 inventory slots
     max_stored_exp: 1000  # Maximum experience points that can be stored
-    max_stack_size: 10000  # Maximum number of spawners that can be stacked
+    max_stack_size: 1000  # Maximum number of spawners that can be stacked
 
     # Behavior Settings - Controls special spawner functionality
     allow_exp_mending: true   # Allow spawners to repair items with stored XP
@@ -50,7 +53,7 @@ spawner_break:
   enabled: true         # Master switch for spawner breaking feature
 
   # Whether to directly add spawner items to player inventory instead of dropping them on the ground
-  direct_to_inventory: false
+  direct_to_inventory: true
 
   # Tool Requirements - Which tools can break spawners
   required_tools:
@@ -73,14 +76,14 @@ spawner_break:
 # Controls behavior of naturally generated dungeon spawners
 natural_spawner:
   # Whether natural spawners can be broken and collected
-  breakable: false
+  breakable: true
 
   # Convert natural spawners to smart spawners when broken
   # If false, natural spawners will drop vanilla spawner items
-  convert_to_smart_spawner: false
+  convert_to_smart_spawner: true
 
   # Whether natural spawners will spawn mobs
-  spawn_mobs: true
+  spawn_mobs: false
 
   # Whether natural spawner block will be protected from explosions
   protect_from_explosions: false
@@ -94,8 +97,8 @@ custom_economy:
   # Enable or disable selling items from spawners
   enabled: true
 
-  # Supported types: VAULT, COINSENGINE (more will be added in the future)
-  currency: VAULT
+  # Supported types: VAULT, COINSENGINE, GOOSECORE (more will be added in the future)
+  currency: GOOSECORE
 
   # Specifies the name of the currency used by COINSENGINE
   # This setting is only required when using COINSENGINE as the economy currency
@@ -128,7 +131,7 @@ custom_economy:
 
   # Shop plugin integration
   shop_integration:
-    enabled: true
+    enabled: false
     # Supported shop plugins: auto, EconomyShopGUI, EconomyShopGUI-Premium, ShopGUIPlus, zShop, ExcellentShop
     # 'auto' will attempt to detect your installed shop plugin automatically
     preferred_plugin: auto
@@ -199,9 +202,9 @@ hologram:
 
 # Particle effect toggles for visual feedback
 particle:
-  spawner_stack: true           # Show effects when spawners are stacked
-  spawner_activate: true        # Show effects when spawner activates
-  spawner_generate_loot: true   # Show effects when items are generated
+  spawner_stack: false           # Show effects when spawners are stacked
+  spawner_activate: false        # Show effects when spawner activates
+  spawner_generate_loot: false   # Show effects when items are generated
 
 #---------------------------------------------------
 #              Spawner Action Logging
@@ -210,7 +213,7 @@ particle:
 # Provides audit trail and debugging capabilities with minimal performance impact
 logging:
   # Enable/disable the logging system
-  enabled: true
+  enabled: false
   
   # Output format: false for human-readable, true for JSON structured logs
   json_format: false

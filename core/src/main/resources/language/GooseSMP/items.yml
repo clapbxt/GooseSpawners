@@ -1,6 +1,3 @@
-# Language file version - Do not modify this value
-language_version: 1.6.2
-
 # ═══════════════════════════════════════════════════════════════════════════════════════════════════════════
 #   ███████╗███╗   ███╗ █████╗ ██████╗ ████████╗███████╗██████╗  █████╗ ██╗    ██╗███╗   ██╗███████╗██████╗
 #   ██╔════╝████╗ ████║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔══██╗██╔══██╗██║    ██║████╗  ██║██╔════╝██╔══██╗
@@ -17,37 +14,37 @@ language_version: 1.6.2
 custom_item:
   # Appearance of smart spawner items in inventory and tooltips
   spawner:
-    name: '&#3498db{ᴇɴᴛɪᴛʏ} ꜱᴘᴀᴡɴᴇʀ'
-    loot_items: '  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)'
-    loot_items_empty: '  &#ecf0f1•  ʟᴇᴇʀ'
+    name: "&#3498db{ᴇɴᴛɪᴛʏ} ꜱᴘᴀᴡɴᴇʀ"
+    loot_items: "  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)"
+    loot_items_empty: "  &#ecf0f1•  ɴᴏɴᴇ"
     lore:
-    - ''
-    - '&#3498db◈ &#3498dbᴅᴇᴛᴀɪʟꜱ:'
-    - '  &#ecf0f1•  ᴇʀꜰᴀʜʀᴜɴɢ: &#3498db{exp}'
-    - ''
-    - '&#3498db◈ &#3498dbᴅʀᴏᴘꜱ:'
-    - '{loot_items}'
-    - ''
+      - ""
+      - "&#3498db◈ &#3498dbᴅᴇᴛᴀɪʟꜱ:"
+      - "  &#ecf0f1•  ᴇxᴘᴇʀɪᴇɴᴄᴇ ɢɪᴠᴇ: &#3498db{exp}"
+      - ""
+      - "&#3498db◈ &#3498dbᴅʀᴏᴘꜱ:"
+      - "{loot_items}"
+      - ""
   
   # Appearance of item spawner items in inventory and tooltips
   item_spawner:
-    name: '&#3498db{ᴇɴᴛɪᴛʏ} ꜱᴘᴀᴡɴᴇʀ'
-    loot_items: '  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)'
-    loot_items_empty: '  &#ecf0f1•  ʟᴇᴇʀ'
+    name: "&#3498db{ᴇɴᴛɪᴛʏ} ꜱᴘᴀᴡɴᴇʀ"
+    loot_items: "  &#ecf0f1•  {amount} {ɪᴛᴇᴍ_ɴᴀᴍᴇ} &#3498db({chance}%)"
+    loot_items_empty: "  &#ecf0f1•  ɴᴏɴᴇ"
     lore:
-    - ''
-    - '&#3498db◈ &#3498dbᴅᴇᴛᴀɪʟꜱ:'
-    - '  &#ecf0f1•  ᴇʀꜰᴀʜʀᴜɴɢ: &#3498db{exp}'
-    - ''
-    - '&#3498db◈ &#3498dbᴅʀᴏᴘꜱ:'
-    - '{loot_items}'
-    - ''
+      - ""
+      - "&#3498db◈ &#3498dbᴅᴇᴛᴀɪʟꜱ:"
+      - "  &#ecf0f1•  ᴇxᴘᴇʀɪᴇɴᴄᴇ ɢɪᴠᴇ: &#3498db{exp}"
+      - ""
+      - "&#3498db◈ &#3498dbᴅʀᴏᴘꜱ:"
+      - "{loot_items}"
+      - ""
   
   # Appearance of vanilla spawner items in inventory and tooltips
   # Available placeholders: {entity}, {ᴇɴᴛɪᴛʏ}
   # Delete this section if you don't want to use custom vanilla spawners name and lore
   vanilla_spawner:
-    name: '{entity} Spawner'
+    name: "{entity} Spawner"
 
 # Item display names
 item:
@@ -56,142 +53,142 @@ item:
 
     # Animal & Fish Drops
   LEATHER:
-    name: Leder
+    name: Leather
   STRING:
-    name: Faden
+    name: String
   FEATHER:
-    name: Feder
+    name: Feather
   CHICKEN:
-    name: Rohes Hühnchen
+    name: Raw Chicken
   COD:
-    name: Roher Kabeljau
+    name: Raw Cod
   SALMON:
-    name: Roher Lachs
+    name: Raw Salmon
   BEEF:
-    name: Rohes Rindfleisch
+    name: Raw Beef
   PORKCHOP:
-    name: Rohes Schweinefleisch
+    name: Raw Porkchop
   MUTTON:
-    name: Rohes Hammelfleisch
+    name: Raw Mutton
   RABBIT:
-    name: Rohes Kaninchen
+    name: Raw Rabbit
   WHITE_WOOL:
-    name: Weiße Wolle
+    name: White Wool
   RABBIT_HIDE:
-    name: Kaninchenfell
+    name: Rabbit Hide
   RABBIT_FOOT:
-    name: Hasenpfote
+    name: Rabbit's Foot
   PUFFERFISH:
-    name: Kugelfisch
+    name: Pufferfish
   TROPICAL_FISH:
-    name: Tropenfisch
+    name: Tropical Fish
   
   # Hostile Mob Drops
   BONE:
-    name: Knochen
+    name: Bone
   BONE_MEAL:
-    name: Knochenmehl
+    name: Bone Meal
   ARROW:
-    name: Pfeil
+    name: Arrow
   SPIDER_EYE:
-    name: Spinnenauge
+    name: Spider Eye
   GUNPOWDER:
-    name: Schwarzpulver
+    name: Gunpowder
   ROTTEN_FLESH:
-    name: Verrottetes Fleisch
+    name: Rotten Flesh
   ENDER_PEARL:
-    name: Enderperle
+    name: Ender Pearl
   GHAST_TEAR:
-    name: Ghastträne
+    name: Ghast Tear
   MAGMA_CREAM:
-    name: Magmacreme
+    name: Magma Cream
   PHANTOM_MEMBRANE:
-    name: Phantomhaut
+    name: Phantom Membrane
   SHULKER_SHELL:
-    name: Shulker-Schale
+    name: Shulker Shell
   SLIME_BALL:
-    name: Schleimball
+    name: Slime Ball
   BLAZE_ROD:
-    name: Lohenrute
+    name: Blaze Rod
   BREEZE_ROD:
-    name: Böenrute
+    name: Breeze Rod
   WITHER_SKELETON_SKULL:
-    name: Witherskelettschädel
+    name: Wither Skeleton Skull
   
   # Weapons & Tools
   BOW:
-    name: Bogen
+    name: Bow
   CROSSBOW:
-    name: Armbrust
+    name: Crossbow
   GOLDEN_SWORD:
-    name: Goldschwert
+    name: Golden Sword
   GOLDEN_AXE:
-    name: Goldaxt
+    name: Golden Axe
   STONE_SWORD:
-    name: Steinschwert
+    name: Stone Sword
   IRON_AXE:
-    name: Eisenaxt
+    name: Iron Axe
   TRIDENT:
-    name: Dreizack
+    name: Trident
   TIPPED_ARROW:
-    name: Getränkter Pfeil
+    name: Tipped Arrow
   TOTEM_OF_UNDYING:
-    name: Totem der Unsterblichkeit
+    name: Totem of Undying
   SADDLE:
-    name: Sattel
+    name: Saddle
   
   # Materials & Resources
   COPPER_INGOT:
-    name: Kupferbarren
+    name: Copper Ingot
   PRISMARINE_SHARD:
-    name: Prismarinscherbe
+    name: Prismarine Shard
   PRISMARINE_CRYSTALS:
-    name: Prismarinkristalle
+    name: Prismarine Crystals
   WET_SPONGE:
-    name: Nasser Schwamm
+    name: Wet Sponge
   EMERALD:
-    name: Smaragd
+    name: Emerald
   IRON_INGOT:
-    name: Eisenbarren
+    name: Iron Ingot
   GOLD_NUGGET:
-    name: Goldklumpen
+    name: Gold Nugget
   GOLD_INGOT:
-    name: Goldbarren
+    name: Gold Ingot
   REDSTONE:
-    name: Redstone
+    name: Redstone Dust
   GLOWSTONE_DUST:
-    name: Leuchtsteinstaub
+    name: Glowstone Dust
   COAL:
-    name: Kohle
+    name: Coal
   
   # Miscellaneous Items
   GLOW_INK_SAC:
-    name: Leuchttintenbeutel
+    name: Glow Ink Sac
   INK_SAC:
-    name: Tintenbeutel
+    name: Ink Sac
   CARROT:
-    name: Karotte
+    name: Carrot
   POTATO:
-    name: Kartoffel
+    name: Potato
   POPPY:
-    name: Mohnblume
+    name: Poppy
   SNOWBALL:
-    name: Schneeball
+    name: Snowball
   SEAGRASS:
-    name: Seegras
+    name: Seagrass
   SUGAR:
-    name: Zucker
+    name: Sugar
   GLASS_BOTTLE:
-    name: Glasflasche
+    name: Glass Bottle
   STICK:
-    name: Stock
+    name: Stick
   SCULK_CATALYST:
-    name: Sculk-Katalysator
+    name: Sculk Catalyst
   TIDE_ARMOR_TRIM_SMITHING_TEMPLATE:
-    name: 'Schmiedevorlage: Gezeiten-Rüstungsbesatz'
+    name: Tide Armor Trim
   DIAMOND:
-    name: Diamant
+    name: Diamond
   NETHER_STAR:
-    name: Netherstern
+    name: Nether Star
   NETHERITE_INGOT:
-    name: Netheritbarren
+    name: Netherite Ingot

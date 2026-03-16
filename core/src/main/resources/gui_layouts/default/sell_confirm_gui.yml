@@ -1,3 +1,6 @@
+# GUI Layout version - Do not modify this value
+gui_layout_version: 1.6.2
+
 # Sell Confirmation GUI Layout Configuration
 # Slot positions: 1-27 (3 rows of 9 slots each)
 # Valid materials: https://jd.papermc.io/paper/1.21.8/org/bukkit/Material.html
@@ -24,17 +27,17 @@
 slot_11:
   material: RED_STAINED_GLASS_PANE
   enabled: true
-  click: "cancel"
+  click: cancel
 
 # Spawner info display (not clickable)
 slot_14:
   material: PLAYER_HEAD
   enabled: true
   info_button: true
-  click: "none"
+  click: none
 
 # Confirm button
 slot_17:
   material: LIME_STAINED_GLASS_PANE
   enabled: true
-  click: "confirm"
+  click: confirm

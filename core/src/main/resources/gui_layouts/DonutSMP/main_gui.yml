@@ -1,3 +1,6 @@
+# GUI Layout version - Do not modify this value
+gui_layout_version: 1.6.2
+
 # Main GUI Layout Configuration
 # Slot positions: 1-27 (3 rows of 9 slots each)
 # Valid materials: https://jd.papermc.io/paper/1.21.8/org/bukkit/Material.html
@@ -27,7 +30,7 @@
 slot_12:
   material: CHEST
   enabled: true
-  click: "open_storage"
+  click: open_storage
 
 # Spawner info button (conditional actions)
 slot_14:
@@ -36,13 +39,13 @@ slot_14:
   info_button: true
   if:
     sell_integration:
-      click: "sell_and_exp"
+      click: sell_and_exp
     no_sell_integration:
-      click: "none"
+      click: none
 
 # Experience bottle
 slot_16:
   material: EXPERIENCE_BOTTLE
   enabled: true
-  click: "collect_exp"
+  click: collect_exp
 

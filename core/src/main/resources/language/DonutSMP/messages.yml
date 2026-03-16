@@ -28,16 +28,18 @@
 # ------------------------------------------------------
 #                  Messages Prefix
 # ------------------------------------------------------
-prefix: "&8[&#3498dbSᴍᴀʀᴛSᴘᴀᴡɴᴇʀ&8] &r"
+prefix: "&8[&#3498dbGᴏᴏѕᴇSᴘᴀᴡɴᴇʀѕ&8] &r"
 
 # ------------------------------------------------------
 #             Spawner - Player Interaction
 # ------------------------------------------------------
 spawner_activated:
+  enabled: false
   message: "&#e6e6faꜱᴘᴀᴡɴᴇʀ &#3498dbᴀᴄᴛɪᴠᴀᴛᴇᴅ&#e6e6fa! ᴄᴏʟʟᴇᴄᴛ ʟᴏᴏᴛ & xᴘ ᴛʜʀᴏᴜɢʜ ꜱᴘᴀᴡɴᴇʀ ɢᴜɪ."
   sound: block.beacon.activate
 
 spawner_protected:
+  enabled: false
   action_bar: "&#ff5252⚠ ᴛʜɪꜱ ꜱᴘᴀᴡɴᴇʀ ɪꜱ ᴘʀᴏᴛᴇᴄᴛᴇᴅ ⚠"
   sound: block.note_block.pling
 

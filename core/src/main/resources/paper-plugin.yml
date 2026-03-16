@@ -1,9 +1,11 @@
-name: SmartSpawner
+name: GooseSpawner
 version: '${version}'
 main: github.nighter.smartspawner.SmartSpawner
 api-version: '1.21'
 description: "A GUI-based spawner plugin that generates items and experience without spawning mobs"
-authors: [ https://github.com/NighterDevelopment/SmartSpawner ]
+authors: [ https://github.com/NighterDevelopment/SmartSpawner,
+           https://github.com/clapbxt/GooseSpawners ]
+
 website: "https://nighterdevelopment.github.io/SmartSpawner/"
 folia-supported: true
 
@@ -11,7 +13,7 @@ folia-supported: true
 load: POSTWORLD
 
 # Prefix for logging messages
-prefix: "SmartSpawner"
+prefix: "GooseSpawner"
 
 # Bootstrap configuration
 # bootstrapper: github.nighter.smartspawner.SmartSpawnerBootstrap
@@ -56,6 +58,10 @@ dependencies:
       required: false
       join-classpath: true
     Vault:
+      load: BEFORE
+      required: false
+      join-classpath: true
+    GooseCore:
       load: BEFORE
       required: false
       join-classpath: true

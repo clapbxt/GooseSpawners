@@ -19,7 +19,7 @@ NETHERITE_INGOT:
 
 # Diamond spawner
 DIAMOND:
-  material: "DIAMOND"
+  material: "DIAMOND"   
   experience: 1
   loot:
     DIAMOND:
